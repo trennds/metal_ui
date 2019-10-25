@@ -1,0 +1,22 @@
+.metal-btn {
+    background-color: $primary-color;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    &.large {
+        padding: 15px 32px;
+        color: black;
+    }
+    &.border-only {
+        background-color: transparent;
+        border: 2px solid rgb(48, 10, 138);
+        color: black;
+        padding: 13px;
+    }
+}
