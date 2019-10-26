@@ -1,0 +1,10 @@
+{
+    "plugins": {
+        "posthtml-md": {
+            "root": "docs"
+        }
+    },
+    "posthtml-modules": {
+      "root": "./docs"
+    }
+}

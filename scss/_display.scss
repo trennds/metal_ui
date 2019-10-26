@@ -1,0 +1,25 @@
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+@each $screen,
+$val in $media-screens {
+    @media screen and (min-width: $val) {
+        .d-#{$screen}-none {
+            display: none;
+        }
+    }
+}
+
+@each $screen,
+$val in $media-screens {
+    @media screen and (min-width: $val) {
+        .d-#{$screen}-block {
+            display: block;
+        }
+    }
+}

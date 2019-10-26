@@ -1,4 +1,5 @@
-import { uglify } from "rollup-plugin-uglify";
+import commonjs from 'rollup-plugin-commonjs';
+import resolve from 'rollup-plugin-node-resolve';
 
 module.exports = {
     input: 'js/index.js',
@@ -7,5 +8,7 @@ module.exports = {
         format: 'iife',
         sourceMap: 'inline',
     },
-    plugins: [uglify()]
+    plugins: [resolve(), commonjs({
+        include: 'node_modules/**'
+    })]
 };
