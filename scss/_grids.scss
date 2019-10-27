@@ -5,14 +5,14 @@ $val in $media-screens {
     @media screen and (min-width: $val) {
         @if $screen=="xs" or $screen=="sm" {
             @each $col in $sm-columns {
-                .metal-col-#{$screen}-#{$col} {
+                .col-#{$screen}-#{$col} {
                     flex: 0 0 (100%/$grid-columns) * $col;
                 }
             }
         }
         @else {
             @each $col in $columns {
-                .metal-col-#{$screen}-#{$col} {
+                .col-#{$screen}-#{$col} {
                     flex: 0 0 (100%/$grid-columns) * $col;
                 }
             }

@@ -1,0 +1,53 @@
+.btn-success{
+    background-color: $success-color;
+    color: aliceblue;
+}
+.btn-warning{
+    background-color: $warning-color;
+}
+.btn-primary{
+    background-color: $primary-color;
+    color: aliceblue;
+}
+.btn-secondary{
+    background-color: $secondary-color;
+    color: white;
+}
+
+
+.btn-grad-success{
+    background: rgba(88,176,96,1);
+    background: -webkit-linear-gradient(left, rgba(88,176,96,1) 0%, rgba(88,176,96,1) 0%, rgba(15,140,32,1) 100%);
+    color: aliceblue;
+    &:hover {
+        background: -webkit-linear-gradient(left, rgba(88,176,96,0.95) 0%, rgba(88,176,96,0.95) 0%, rgba(15,140,32,0.95) 100%);
+
+    }
+}
+.btn-grad-warning{
+    background: rgba(238,207,113,1);
+    background: -webkit-linear-gradient(left, rgba(238,207,113,1) 0%, rgba(238,207,113,1) 0%, rgba(255,187,0,1) 100%);
+    color: black;
+    &:hover {
+        background: -webkit-linear-gradient(left, rgba(238,207,113,0.95) 0%, rgba(238,207,113,0.95) 0%, rgba(255,187,0,0.95) 100%);
+
+    }
+}
+.btn-grad-primary{
+    background: rgba(93,189,181,1);
+    background: -webkit-linear-gradient(left, rgba(93,189,181,1) 0%, rgba(93,189,181,1) 0%, rgba(7,134,177,1) 100%);
+    color: aliceblue;
+    &:hover {
+        background: -webkit-linear-gradient(left, rgba(93,189,181,0.95) 0%, rgba(93,189,181,0.95) 0%, rgba(7,134,177,0.95) 100%);
+
+    }
+}
+.btn-grad-secondary{
+    background: rgba(128,128,128,1);
+    background: -webkit-linear-gradient(left, rgba(128,128,128,1) 0%, rgba(94,94,94,1) 0%, rgba(41,39,41,1) 100%);
+    color: white;
+    &:hover {
+        background: -webkit-linear-gradient(left, rgba(128,128,128,0.95) 0%, rgba(94,94,94,0.95) 0%, rgba(41,39,41,0.95) 100%);
+
+    }
+}

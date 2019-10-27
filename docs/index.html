@@ -2,22 +2,32 @@
 
 <head>
     <title>Metal Test Page</title>
-    <link rel="stylesheet" href="../dist/css/metal.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="main">
-        <div class="input-group">
-            <label>Password</label>
-            <input type="text" placeholder="Placeholder">
+        <div class="row">
+            <div class="col col-md-6">
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="text" placeholder="Placeholder">
+                </div>
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <button class="metal-btn">submit</button>
+                </div>
+            </div>
         </div>
-        <div class="input-group">
-            <label>Username</label>
-            <input type="text" placeholder="Username">
-        </div>
-        <div class="input-group">
-            <button class="metal-btn">submit</button>
-        </div>
-        <script src="../dist/js/metal.js"></script>
+        <button class="btn btn-pure-curve btn-primary">button</button>
+        <button class="btn btn-pure-curve btn-grad-warning">button</button>
+        <button class="btn btn-pure-curve btn-grad-success">button</button>
+        <button class="btn btn-pure-curve btn-grad-secondary">button</button>
+        <button class="btn btn-curve btn-grad-warning">button</button>
+        <button class="btn btn-curve btn-grad-primary">button</button>
+        <button class="btn btn-curve btn-grad-success">button</button>
+        <button class="btn btn-curve btn-grad-secondary">button</button>
+        <script src="index.js"></script>
 </body>
