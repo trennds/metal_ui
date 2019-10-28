@@ -1,0 +1,28 @@
+.quiz-card{
+    border: solid grey 2px;
+    padding: 0 40px 0 40px;
+    margin: 0 20% 0 20%;
+
+    .ques-title{
+        color: #1B76C4;
+        font-size: x-large;
+        transform: translateY(-15px);
+    }
+    hr{
+        transform: translateY(-25px);
+    }
+    .quiz-body{
+        padding-left: 20px;
+        transform: translateY(-40px);
+        h4{
+            font-size: 1.1em;
+        }
+        .options{
+            padding-bottom: 15px;
+        }
+        button{
+            width: 30%;
+        }
+    }
+    
+}
