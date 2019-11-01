@@ -6,36 +6,76 @@
 </head>
 
 <body>
-            <div class="col col-md-6">
-                <div class="input-group">
-                    <label>Password</label>
-                    <input type="text" placeholder="Placeholder">
-                </div>
-                <div class="input-group">
-                    <label>Username</label>
-                    <input type="text" placeholder="Username">
-                </div>
-                <div class="input-group">
-                    <button class="metal-btn">submit</button>
-                </div>
-            </div>
 
-        <div class="quiz-card">
-            <div class="ques-title">
-                <h4>Question 1 of 80</h4>
-                <hr>
-            </div>
-            <div class="quiz-body">
-                <h4>Who was the first president of India?</h4>
-                <div class="options">
-                        <p><input type="radio"> name A</p>
-                        <p><input type="radio"> name B</p>
-                        <p><input type="radio"> name C</p>
-                        <p><input type="radio"> name D</p>
-                </div>
-                <button class="" type="submit">Submit</button>
-            </div>
+    <div class="navbar">
+        <div class="navbar-left">
+            <li class="navbar-item active">
+                <a class="nav-link" href="/"> Home </a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="/"> Docs </a>
+            </li>
         </div>
 
-    <script src="index.js"></script>    
+        <div class="metal-brand">
+            <a class="navbar-brand" href="/"> Metal </a>
+        </div>
+
+        <div class="navbar-right">
+            <li class="navbar-item">
+                <button class="navbar-button " href="/"> Login </button>
+            </li>
+            <li class="navbar-item">
+                <button class="navbar-button btn btn-pure-curve btn-grad-success" href="/"> SignUp </button>
+            </li>
+        </div>
+    </div>
+
+
+    <div class="col col-md-6">
+        <div class="input-group">
+            <label>Password</label>
+            <input type="text" placeholder="Placeholder">
+        </div>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-group">
+            <button class="metal-btn">submit</button>
+        </div>
+    </div>
+
+    <div class="quiz-card">
+        <div class="ques-title">Question 1 of 80</div>
+        <div class="quiz-body">
+            <p class="question">Who was the first president of India?</p>
+            <div class="option-group">
+                <button class="option">
+                    <p><span class="alphabet">A</span>
+                        name A
+                    </p>
+                </button>
+                <button class="option">
+                    <p><span class="alphabet">B</span>
+                        name B
+                    </p>
+                </button>
+                <button class="option">
+                    <p><span class="alphabet">C</span>
+                        name C
+                    </p>
+                </button>
+                <button class="option">
+                    <p><span class="alphabet">D</span>
+                        name D
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
 </body>

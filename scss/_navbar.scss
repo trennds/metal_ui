@@ -1,3 +1,45 @@
-.nav-bar {
-    
+.navbar {
+  height: 70px;
+  background-color: #007399;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-left {
+    display: flex;
+    margin-left: 120px;
+    .navbar-item {
+        @extend %navbar-item;
+        margin: 0 auto 0 30px;
+      }
+  }
+
+  .metal-brand {
+    .navbar-brand {
+      font-size: 2.2em;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .navbar-right {
+      display: flex;
+      margin-right: 120px;
+      .navbar-item {
+        @extend %navbar-item;
+        margin: 0 10px 0 auto;
+        .navbar-button {
+            font-size: 0.8rem;
+            padding: 12px 40px;
+          }
+      }
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
 }
+
+

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-    & label {
+    label {
         margin-top: 0;
         padding-top: 0;
         transform: translateY(50%);
@@ -11,7 +11,7 @@
         background: white;
         margin-left: 10px;
     }
-    & input {
+    input {
         height: 40px;
         border-radius: 5px;
         border-style: solid;

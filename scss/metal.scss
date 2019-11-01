@@ -2,9 +2,10 @@
 @import "buttons";
 @import "grids";
 @import "display";
-@import "cards";
 @import "layout";
 @import "form";
 @import "colors";
 @import "./mixins/colors";
 @import "./cards/quizCard";
+@import "./navbar";
+@import "./extend";
