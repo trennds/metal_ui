@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 10.15.3
+install: npm install
+script:
+- npm run build-js
+- npm run build-css
+deploy:
+  provider: s3
+  access_key_id: $ACCESS_KEY
+  secret_access_key: $ACCESS_SECRET
+  bucket: "cdn.trennds.com"
+  skip_cleanup: true
+  acl: public_read
+  local_dir: dist
+  region: ap-south-1
