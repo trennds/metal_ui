@@ -1,5 +1,6 @@
 # Metal Framework
 This is a UI design built for Trennds Inc.
+It's also a project for GSoC Heat organized by GNU/Linux User's Group, NIT Durgapur.
 
 ## Overview
 We use **Sass** to compile the **.scss** syntax to **.css** files.
