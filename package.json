@@ -1,37 +1,34 @@
 {
-    "name": "metal",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "dependencies": {
-        "jquery": "^3.4.1",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
-        "src": "^1.1.2"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.5.5",
-        "@babel/preset-env": "^7.5.5",
-        "@babel/preset-react": "^7.0.0",
-        "node-sass": "^4.12.0",
-        "nodemon": "^1.19.1",
-        "parcel-bundler": "^1.12.3",
-        "posthtml-head-elements": "^0.5.1",
-        "posthtml-md": "^1.1.0",
-        "rollup": "^1.25.2",
-        "rollup-plugin-commonjs": "^10.1.0",
-        "rollup-plugin-node-resolve": "^5.2.0",
-        "sass": "^1.23.1",
-        "uglify-js": "^3.6.4",
-        "uglifycss": "0.0.29"
-    },
-    "scripts": {
-        "build-css": "node-sass scss/ -o dist/css/ && uglifycss dist/css/metal.css --max-line-len 100 --output dist/css/metal.min.css",
-        "build-js": "rollup --config && uglifyjs --compress -o dist/js/metal.min.js dist/js/metal.js",
-        "dev": "parcel docs/index.html --out-dir public",
-        "build-docs": "parcel build docs/index.html --out-dir public"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+	"name": "metal",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"jquery": "^3.4.1",
+		"src": "^1.1.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@babel/preset-react": "^7.0.0",
+		"autoprefixer": "^9.7.3",
+		"hugo-bin": "^0.49.0",
+		"node-sass": "^4.12.0",
+		"nodemon": "^1.19.1",
+		"postcss-cli": "^6.1.3",
+		"rollup": "^1.25.2",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"sass": "^1.23.1",
+		"uglify-js": "^3.6.4",
+		"uglifycss": "0.0.29"
+	},
+	"scripts": {
+		"build-css": "node-sass scss/ -o dist/css/ && uglifycss dist/css/metal.css --max-line-len 100 --output dist/css/metal.min.css",
+		"build-js": "rollup --config && uglifyjs --compress -o dist/js/metal.min.js dist/js/metal.js",
+		"dev": "hugo server --source site/"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }

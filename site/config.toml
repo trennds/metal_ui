@@ -1,0 +1,25 @@
+baseURL = "https://metal.trennds.com/"
+languageCode = "en-us"
+title = "Metal UI"
+
+[permalinks]
+  blog = "blog/:filename/"
+
+[params]
+  dateFormat = "Jan 2, 2006"
+  homeText = "You just made a Hugo blog from scratch."
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    pre = "edit"
+    url = "/blog/"
+    weight = 2
+
+[taxonomies]
+  tag = "tags"
