@@ -52,11 +52,10 @@
   .btn-text{
     @extend .btn;
     color: $border-color;
-    border-color: white;
-    background-color: white;
     border: none;
+    background-color: transparent;
     &:hover {
-      background: white radial-gradient(circle, transparent 1%, white 1%) center/15000%;
+      background: transparent radial-gradient(circle, transparent 1%, white 1%) center/15000%;
     }
     &:active {
       background-color: $border-color;
