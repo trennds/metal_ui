@@ -3,6 +3,9 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"hugo-bin": {
+		"buildTags": "extended"
+	},
 	"dependencies": {
 		"jquery": "^3.4.1",
 		"src": "^1.1.2"
@@ -26,7 +29,8 @@
 	"scripts": {
 		"build-css": "node-sass scss/ -o dist/css/ && uglifycss dist/css/metal.css --max-line-len 100 --output dist/css/metal.min.css",
 		"build-js": "rollup --config && uglifyjs --compress -o dist/js/metal.min.js dist/js/metal.js",
-		"dev": "hugo server --source site/"
+		"dev": "hugo server --source site/",
+		"build-docs": "hugo --source site/ --destination ../public/"
 	},
 	"keywords": [],
 	"author": "",

@@ -1,13 +1,15 @@
 baseURL = "https://metal.trennds.com/"
 languageCode = "en-us"
 title = "Metal UI"
+assetDir="../scss/"
 
 [permalinks]
   blog = "blog/:filename/"
+  posts = "post/:filename/"
 
 [params]
   dateFormat = "Jan 2, 2006"
-  homeText = "You just made a Hugo blog from scratch."
+  homeText = "Build responsive, mobile-first projects on the web with the world’s most popular front-end component library."
 
 [menu]
   [[menu.main]]
@@ -19,6 +21,11 @@ title = "Metal UI"
     name = "Blog"
     pre = "edit"
     url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Posts"
+    pre = "edit"
+    url = "/posts/"
     weight = 2
 
 [taxonomies]

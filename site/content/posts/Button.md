@@ -1,9 +1,8 @@
 ---
-title: 'Button Component'
-date: 2019-03-26T08:47:11+01:00
-draft: true
+title: 'Documentation'
+date: 2019-01-12T22:14:57-06:00
+tags: ['poetry', 'life']
+draft: false
 ---
 
-# My First Button
-
-asdf fiefgew fig
+Check out the documentation of the metal UI.
