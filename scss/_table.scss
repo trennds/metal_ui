@@ -1,6 +1,6 @@
 .tbl {
   width: min-content;
-  background-color: #f0f0f0;
+  background-color: $bgtbl-color;
   border-radius: 20px;
   position: relative;
 }
@@ -10,7 +10,8 @@ caption {
   text-align: center;
 }
 table, th, td {
-  border: 1px solid #f0f0f0;
+  border: 1px solid $bgtbl-color;
+  border-radius: 5px;
   border-collapse: collapse;
   padding: 0.45rem;
   text-align: left;
