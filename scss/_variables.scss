@@ -8,6 +8,9 @@ $eventbl-color: #f0f0f0;
 $oddtbl-color: #10afab;
 $bgtbl-color: #f0f0f0;
 
+//Gradient Metal_UI
+$metal: linear-gradient(45deg, #877ff0 0%, #02006d 100%);
+
 // Grid variables
 $grid-columns: 12;
 $media-screens: ( "xs": "0px", "sm": "576px", "md": "768px", "lg": "992px", "xl": "1200px")

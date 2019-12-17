@@ -3,6 +3,10 @@
   background-color: $bgtbl-color;
   border-radius: 20px;
   position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
 }
 caption {
   font-size: 1.5rem;
@@ -17,7 +21,8 @@ table, th, td {
   text-align: left;
 }
 th {
-  background-color: $border-color;
+  // background-color: $border-color;
+  background: $metal;
   color: white;
   padding: 1rem;
   min-width: 20vw;
