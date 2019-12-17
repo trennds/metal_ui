@@ -4,6 +4,25 @@
   <div class="container">
     <h1 class="display-4">{{ .Site.Title }}</h1>
     <p class="lead p-2">{{ .Site.Params.homeText | markdownify }}</p>
+    <div class="btn">
+      <div>
+        <h5> Button contained </h5>
+        <button class="btn-contained">Button</button>
+      </div>
+      <br />
+      <br />
+      <div>
+        <h5> Button outlined </h5>
+        <button class="btn-outlined">Button</button>
+      </div>
+      <br />
+      <br />
+      <div>
+        <h5> Button text </h5>
+        <button class="btn-text">Button</button>
+      </div>
+    <div>
+    <div style="position:relative">
     <p><h5>   CheckBoxes  </h5></p>
     <label class="checkBox">One
       <input type="checkbox" checked="checked">
@@ -25,7 +44,7 @@
       <span class="checkmark"></span>
     </label> 
     </div>
-    <div>
+    <div style="position:relative">
     <p><h5>   RadioBoxes  </h5></p>
     <label class="radioBox">One
       <input type="radio" checked="checked" name="radio">
