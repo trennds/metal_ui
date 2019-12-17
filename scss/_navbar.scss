@@ -13,7 +13,7 @@
   color: white;
   text-transform: uppercase;
   overflow: hidden;
-  width: 70%;
+  width: 70%; // Can be Changed...
 
   .logonav {
     display: flex;
@@ -33,7 +33,7 @@
     display: flex;
     list-style-type: none;
 
-    li {
+    .parent {
       opacity: 1;
       list-style-type: none;
       color: white;
@@ -54,12 +54,12 @@
         color: white;
 
         &:hover {
-          color: #ea4f4c;
+          color: #10afab;
         }
     }
  
-      li a {
-        font-size: 17px;
+      .link {
+        font-size: 0.95rem;
         padding: 0 5px;
       }
     }
