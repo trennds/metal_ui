@@ -1,72 +1,125 @@
-.navbar {
+navbar {
   margin: 0;
-  padding-left: 0;
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  // display: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  padding: 0;
   background: $metal;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
-  color: white;
-  text-transform: uppercase;
-  overflow: hidden;
-  width: 70%; // Can be Changed...
-
+  z-index: 100;
+  text-align: right;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   .logonav {
-    display: flex;
+    float: left;
+    font-size: 1.25rem;
+    padding-top: 20+10px;  // Change the padding-top according to the navbar >> padding-top: 20+padding in the <navbar ul li{}>
+    padding-left: 10px;
 
-    .nav {
-      font-weight: bold;
-    }
-
-    .logo {
+    & span {
       padding-left: 5px;
       color: rgba(3,3,99,33);
       font-weight: 600;
     }
   }
-
-  .navcontent {
-    display: flex;
-    list-style-type: none;
-
-    .parent {
-      opacity: 1;
-      list-style-type: none;
-      color: white;
-      text-decoration: none;
-      transition: all 0.3s ease-in-out;
+  & ul {
+    padding: 0;
+    // margin: 0;
+    width: 80%; // Can be made 100% for full
+    list-style: none;
+    // position: absolute;
+    background: $metal;
+    & li {
+      padding: 10px;
+      margin: 0px;
+      display: inline-block; 
+      text-align: center;
     }
+  }
 
-    .parent {
-      padding: 0 10px;
-      cursor: pointer;
-
-      .link {
-        position: relative;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-        color: white;
-
-        &:hover {
-          color: #10afab;
-        }
-    }
- 
-      .link {
-        font-size: 0.95rem;
-        padding: 0 5px;
-      }
-    }
+  
+  & a {
+    display: block;
+    padding: 0 20px;
+    color: #f0f0f0;
+    font-size: 1.20rem;
+    line-height: 60px;
+    text-decoration: none;
+  }
+   ul li:hover { background: linear-gradient(45deg, #f77ff0 0%, $oddtbl-color 100%);
+    
   }
 }
 
-// Earlier deployment of Navbar and its scss...
+
+// navbar {
+//   margin: 0;
+//   padding-left: 0;
+//   font-family: "Roboto", sans-serif;
+//   position: relative;
+//   // display: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding-left: 20px;
+//   background: $metal;
+//   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+//   color: white;
+//   text-transform: uppercase;
+//   overflow: hidden;
+//   width: 70%; // Can be Changed...
+
+//   .logonav {
+//     display: flex;
+
+//     .nav {
+//       font-weight: bold;
+//     }
+
+//     .logo {
+//       padding-left: 5px;
+//       color: rgba(3,3,99,33);
+//       font-weight: 600;
+//     }
+//   }
+
+//   .navcontent {
+//     display: flex;
+//     list-style-type: none;
+//     // padding: 20px;
+//     .parent {
+//       opacity: 1;
+//       list-style-type: none;
+//       color: white;
+//       text-decoration: none;
+//       transition: all 0.3s ease-in-out;
+//     }
+
+//     .parent {
+//       padding: 0 10px;
+//       cursor: pointer;
+//       &:hover {
+//         background: linear-gradient(45deg, #f77ff0 0%, $oddtbl-color 100%);;
+//       }
+
+//       .link {
+//         position: relative;
+//         display: flex;
+//         align-items: center;
+//         text-decoration: none;
+//         transition: all 0.3s ease-in-out;
+//         color: white;
+
+//     }
+ 
+//       .link {
+//         font-size: 0.95rem;
+//         padding: 0 5px;
+//       }
+//     }
+//   }
+// }
+
+// Earliermost deployment of Navbar and its scss...
 
 // .navbar {
 //   height: 70px;

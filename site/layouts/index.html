@@ -74,20 +74,19 @@
     <div style="position:relative;text-align:center;font-family: Roboto, sans-serif;text-transform:uppercase;letter-spacing: 0.09em;">
     <h4>   NavBar  </h4>
     </div>
-    <nav class="navbar">
-      <div class="logonav">
-        <span class="nav">Metal</span>
-        <span class="logo">UI</span>
-      </div>
-      <ul class="navcontent">
-        <li class="parent"><a class="link" href="#">Home</a></li>
-        <li class="parent"><a class="link" href="#">About</a></li>
-        <li class="parent"><a class="link" href="#">Clients </a></li>
-        <li class="parent" id="services">
-          <a class="link" href="#">Services </a></li>
-        <li class="parent"><a class="link" href="#">Contact</a></li>
+    <navbar>
+      <ul>
+        <div class="logonav">
+          <span>Metal_UI</span>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Clients </a></li>
+        <li>
+          <a href="#">Services </a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </nav>
+    </navbar>
     <br />
     <br />
     <br />
@@ -100,7 +99,6 @@
         <li ><a href="#">Home</a></li>
         <li> 
           <!-- First Tier Drop Down -->
-          <label for="drop-1" class="toggle">Service +</label>
           <a href="#">Service</a>
           <input type="checkbox" id="drop-1"/>
           <ul>
@@ -109,9 +107,8 @@
             <li><a href="#">Service 3</a></li>
           </ul>
         </li>
-        <li>
+        <li> 
           <!-- First Tier Drop Down -->
-          <label for="drop-2" class="toggle">Portfolio +</label>
           <a href="#">Portfolio</a>
           <input type="checkbox" id="drop-2"/>
           <ul>
@@ -125,6 +122,7 @@
         <li><a href="#">About</a></li>
       </ul>
     </dropmenu>
+    <br />
     <br />
     <br />
     <br />

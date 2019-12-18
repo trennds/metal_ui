@@ -5,6 +5,10 @@
 		content="width=device-width, initial-scale=1, shrink-to-fit=no"
 	/>
 	{{ hugo.Generator }}
+	<link
+		rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	/>
 	{{ $style := resources.Get "metal.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 	{{ $title := print .Title " | " .Site.Title }} {{ if .IsHome }} {{ $title = .Site.Title }}{{ end }}

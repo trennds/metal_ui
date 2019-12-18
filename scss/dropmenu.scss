@@ -1,70 +1,69 @@
- .toggle, [id^=drop] {
+.toggle, [id^=drop] {
  display: none;
 }
 dropmenu {
   margin: 0;
   padding: 0;
   background: $metal;
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-}
-}
 
-dropmenu ul {
-  float: left;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: relative;
-  background: $metal;
-  z-index: 5;
-}
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
+  & ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    list-style: none;
+    position: absolute;
+    background: $metal;
+    z-index: 5;
 
-dropmenu ul li {
-  margin: 0px;
-  display: block;
-  float: left;
-}
+    & li {
+      margin: 0px;
+      display: flex;
+      float: left;
+    }
 
-dropmenu a {
-  display: block;
-  padding: 0 20px;
-  color: #FFF;
-  font-size: 20px;
-  line-height: 60px;
-  text-decoration: none;
-}
+    
+    & ul {
+      display: none;
+      position: absolute;
+      top: 60px;
 
-// dropmenu ul li ul li:hover { background: linear-gradient(45deg, #f77ff0 0%, #10afab 100%); }
+      & li {
+        width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+      }
+    }
+  }
 
-dropmenu a:hover { background: linear-gradient(45deg, #f77ff0 0%, #10afab 100%); }
+  
+  & a {
+    display: block;
+    padding: 0 20px;
+    color: #f0f0f0;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
 
-dropmenu ul ul {
-  display: none;
-  position: absolute;
-  top: 60px;
+  // dropmenu ul li ul li:hover { background: linear-gradient(45deg, #f77ff0 0%, #02006d 100%); }
+
+    &:hover { background: linear-gradient(45deg, #f77ff0 0%, $oddtbl-color 100%);
+    }
+  }
 }
 
 dropmenu ul li:hover > ul { display: inherit; }
 
-dropmenu ul ul li {
-  width: 170px;
-  float: none;
-  display: list-item;
-  position: relative;
-}
+// li > a:after { content: ' +'; }
 
-dropmenu ul ul ul li {
-  position: relative;
-  top: -60px;
-  left: 170px;
-}
-
-li > a:after { content: ' +'; }
-
-li > a:only-child:after { content: ''; }
+// li > a:only-child:after { content: ''; }
 
 
 /* Media Queries
