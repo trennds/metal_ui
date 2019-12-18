@@ -16,7 +16,8 @@ dropmenu {
     float: left;
     padding: 0;
     margin: 0;
-    width: 60%;
+    min-width: 90%;
+    width: auto;
     list-style: none;
     position: absolute;
     background: $metal;
@@ -24,7 +25,7 @@ dropmenu {
 
     & li {
       margin: 0px;
-      display: flex;
+      display: block;
       float: left;
     }
 
@@ -33,12 +34,11 @@ dropmenu {
       display: none;
       position: absolute;
       top: 60px;
-
+      box-sizing: border-box;
       & li {
-        width: 170px;
         float: none;
-        display: list-item;
         position: relative;
+        display: block;
       }
     }
   }

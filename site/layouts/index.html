@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-<div class="jumbotron jumbotron-fluid text-center">
-  <div class="container">
+<div class="jumbotron jumbotron-fluid text-center" style="width:100vw;margin:0;padding:0;overflow:hidden;background-color:#e8e1e1">
+  <div class="container" style="padding:20px;">
     <h1 class="display-4">{{ .Site.Title }}</h1>
     <p class="lead p-2">{{ .Site.Params.homeText | markdownify }}</p>
     <div class="btn">
@@ -115,6 +115,12 @@
             <li><a href="#">Portfolio 1</a></li>
             <li><a href="#">Portfolio 2</a></li>
             <li><a href="#">Works</a></li>
+            <li><a href="#">Portfolio 1</a></li>
+            <li><a href="#">Portfolio 2</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Portfolio 1</a></li>
+            <li><a href="#">Portfolio 2</a></li>
+            <li><a href="#">Works</a></li>
           </ul>
         </li>
         <li><a href="#">Blog</a></li>
@@ -159,7 +165,7 @@
         </tr>
       </table> 
     </div>
-    <button id="btnbtn">Click Me</button>
+    <button class="btn-contained">Click Me</button>
   </div>
 </div>
 

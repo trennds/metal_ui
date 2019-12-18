@@ -31,5 +31,4 @@ tr:nth-child(even):hover {
   background-color: $eventbl-color;
 }
 tr:nth-child(odd):hover {
-  background-color: $oddtbl-color;
-}
+background: linear-gradient(45deg, $oddtbl-color 0%, #f77ff0 100%);}
