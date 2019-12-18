@@ -7,6 +7,7 @@
 		"buildTags": "extended"
 	},
 	"dependencies": {
+		"gulp-run-command": "0.0.10",
 		"jquery": "^3.4.1",
 		"src": "^1.1.2"
 	},
@@ -16,9 +17,11 @@
 		"@babel/preset-react": "^7.0.0",
 		"@babel/register": "^7.7.4",
 		"autoprefixer": "^9.7.3",
+		"babel-core": "^6.26.3",
 		"babel-loader": "^8.0.6",
-		"browser-sync": "^2.26.7",
-		"gulp": "^4.0.2",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
 		"hugo-bin": "^0.49.0",
 		"node-sass": "^4.12.0",
 		"nodemon": "^1.19.1",
@@ -35,8 +38,10 @@
 	"scripts": {
 		"build-css": "node-sass scss/ -o dist/css/ && uglifycss dist/css/metal.css --max-line-len 100 --output dist/css/metal.min.css",
 		"build-js": "rollup --config && uglifyjs --compress -o dist/js/metal.min.js dist/js/metal.js",
-		"dev": "gulp watch",
-		"build-docs": "hugo --source site/ --destination ../public/"
+		"webpack": "webpack --mode development",
+		"build-docs": "gulp build",
+		"server": "webpack --mode development && hugo server --source site/",
+		"dev": "nodemon --watch js/ --exec npm run server"
 	},
 	"keywords": [],
 	"author": "",

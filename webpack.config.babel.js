@@ -7,7 +7,7 @@ export default {
 		// secondpost: ["./app/second-post.js"]
 	},
 	output: {
-		path: path.resolve(__dirname, 'public', 'js'),
+		path: path.resolve(__dirname, 'site', 'static', 'js'),
 		filename: '[name].bundle.js'
 	},
 	module: {
