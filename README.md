@@ -1,7 +1,5 @@
 # Metal Framework
 
-[![Build Status](https://travis-ci.com/trennds/metal_ui.svg?branch=master)](https://travis-ci.com/trennds/metal_ui)
-
 This is a UI design built for Trennds Inc.
 It's also a project for GSoC Heat organized by GNU/Linux User's Group, NIT Durgapur.
 
